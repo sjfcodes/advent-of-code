@@ -16,8 +16,7 @@ const part1 = (input: string) => {
 };
 
 const part2 = (input: string) => {
-  let replaced = input;
-  [
+  const replaced = [
     ["one", "one1one"],
     ["two", "two2two"],
     ["three", "three3three"],
@@ -27,9 +26,9 @@ const part2 = (input: string) => {
     ["seven", "seven7seven"],
     ["eight", "eight8eight"],
     ["nine", "nine9nine"],
-  ].forEach(([str, replace]) => {
-    replaced = replaced.replaceAll(str, replace);
-  });
+  ].reduce((str, [find, replace]) => {
+    return str.replaceAll(find, replace);
+  }, input);
 
   return part1(replaced);
 };

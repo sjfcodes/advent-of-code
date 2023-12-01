@@ -1,8 +1,8 @@
 {
-  "name": "aoc-2023",
+  "name": "advent-of-code",
   "version": "1.0.0",
   "description": "",
-  "main": "puzzles/2022/Day 1: Calorie Counting/index.ts",
+  "main": "puzzles/2023/Day 1: Trebuchet/index.ts",
   "scripts": {
     "start": "ts-node ",
     "dev": "nodemon",
