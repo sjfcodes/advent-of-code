@@ -2,10 +2,9 @@
   "name": "aoc-2023",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node ",
+    "dev": "nodemon puzzles/2023/Day_1/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
