@@ -2,9 +2,9 @@
   "name": "advent-of-code",
   "version": "1.0.0",
   "description": "",
-  "main": "puzzles/2023/Day 1: Trebuchet/index.ts",
+  "main": "events/2023/Day 2: Cube Conundrum/index.ts",
   "scripts": {
-    "start": "ts-node ",
+    "start": "ts-node",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
