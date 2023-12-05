@@ -7,7 +7,7 @@ const log = (...args: any[]) =>
   console.log(util.inspect(...args, false, null, true /* enable colors */));
 
 type MaxMap = { [color: string]: number };
-const ex1input = fs.readFileSync(path.resolve(__dirname, "./example.txt"), {
+const exampleInput = fs.readFileSync(path.resolve(__dirname, "./example.txt"), {
   encoding: "utf8",
 });
 const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), {
@@ -85,9 +85,9 @@ const part2 = (input: string, maxByColorMap: MaxMap) => {
 
 // log("part1");
 // const exMaxByColor: MaxMap = { red: 12, green: 13, blue: 14 };
-// log(part1(ex1input, exMaxByColor)); // 8
+// // log(part1(exampleInput, exMaxByColor)); // 8
 // log(part1(input, exMaxByColor)); // 1867
 
-log("part2");
-log(part2(ex1input, {})); // 2286
-log(part2(input, {})); // 84538
+// log("part2");
+// // log(part2(exampleInput, {})); // 2286
+// log(part2(input, {})); // 84538
