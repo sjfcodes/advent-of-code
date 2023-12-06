@@ -6,6 +6,9 @@ const log = (...args: any[]) =>
   // @ts-ignore
   console.log(util.inspect(...args, false, null, true /* enable colors */));
 
+const exInput = fs.readFileSync(path.resolve(__dirname, "./example.txt"), {
+  encoding: "utf8",
+});
 const input = fs.readFileSync(path.resolve(__dirname, "./input.txt"), {
   encoding: "utf8",
 });
@@ -23,7 +26,9 @@ const part2 = (input: string) => {
 };
 
 log("part1");
-log(part1(input)); // answer
+log(part1(exInput)); // answer
+// log(part1(input)); // answer
 
 log("part2");
-log(part2(input)); // answer
+log(part2(exInput)); // answer
+// log(part2(input)); // answer
